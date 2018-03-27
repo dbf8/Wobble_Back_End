@@ -53,6 +53,17 @@ app.delete('/api/websites/:id', (req, res) => {
   })
 })
 
+//put // does not work
+// app.put('/api/websites/:id', (req, res) => {
+//   Websites.findOneAndUpdate({ _id: req.params.id }, req.body, {
+//     new: true
+//   }).then(websites => {
+//     Websites.find({}).then(websites => {
+//       res.json(websites)
+//     })
+//   })
+// })
+
 app.set('port', process.env.PORT || 3001)
 
 app.listen(app.get('port'), () => {

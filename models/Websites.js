@@ -25,5 +25,5 @@ const WebsiteSchema = new mongoose.Schema({
 // Giving mongoose the schema to build the model
 const website = mongoose.model('websites', WebsiteSchema)
 
-// exporting the Blog model
+// exporting the website model
 module.exports = website
