@@ -6,6 +6,7 @@ Website.remove({}).then(() => {
       title: 'STUMBLEUPON',
       website: 'www.stumbleupon.com', // too meta?
       username: 'Admin'
+      rating: 0
     })
   ]).then(() => {
     console.log('done')

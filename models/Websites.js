@@ -15,6 +15,10 @@ const WebsiteSchema = new mongoose.Schema({
   username: {
     // of person who added
     type: String
+  },
+  rating: {
+    // upvotes vs downvotes
+    type: Number
   }
 })
 
