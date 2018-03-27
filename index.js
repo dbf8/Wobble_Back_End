@@ -25,7 +25,7 @@ app.use(cors())
 
 app.get('/api', function(req, res) {
   Websites.find({}).then(websites => {
-    console.log(websites)
+    console.log(res.json(websites))
     res.json(websites)
   })
 })
