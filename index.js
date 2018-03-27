@@ -17,14 +17,14 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors())
-
+//get
 app.get('/api/websites', function(req, res) {
   Websites.find({}).then(websites => {
     console.log(res.json(websites))
     res.json(websites)
   })
 })
-
+//add!
 app.post('/api/websites', (req, res) => {
   Websites.create(req.body)
     .then(websites => {
@@ -34,7 +34,7 @@ app.post('/api/websites', (req, res) => {
       console.log(err)
     })
 })
-
+//get
 app.get('/api/websites/:id', (req, res) => {
   Websites.findById(req.params.id)
     .then(websites => {
@@ -43,6 +43,14 @@ app.get('/api/websites/:id', (req, res) => {
     .catch(err => {
       console.log(err)
     })
+})
+//delete!
+app.delete('/api/websites/:id', (req, res) => {
+  Websites.findOneAndRemove({ _id: req.params.id }).then(websites => {
+    Websites.find({}).then(websites => {
+      res.json(websites)
+    })
+  })
 })
 
 app.set('port', process.env.PORT || 3001)

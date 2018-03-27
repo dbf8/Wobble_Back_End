@@ -5,7 +5,7 @@ Website.remove({}).then(() => {
     Website.create({
       title: 'STUMBLEUPON',
       website: 'www.stumbleupon.com', // too meta?
-      username: 'Admin'
+      username: 'Admin',
       rating: 0
     })
   ]).then(() => {
