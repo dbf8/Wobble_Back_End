@@ -8,8 +8,6 @@ const cors = require('cors')
 
 //model
 const Websites = require('./models/Websites')
-//controller
-const websitesController = require('./controllers/websites')
 
 const app = express()
 app.use(methodOverride('_method'))
@@ -19,8 +17,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors())
-
-// app.use('/', index)
 
 app.get('/api/websites', function(req, res) {
   Websites.find({}).then(websites => {
