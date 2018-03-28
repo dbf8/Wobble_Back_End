@@ -54,6 +54,17 @@ app.delete('/api/websites/:id', (req, res) => {
   })
 })
 
+//comment posting ( think I'm doing this right...) (not sure if calling the :id is the right move? NHI?)
+app.post('/api/websites/:id', (req, res) => {
+  Websites.findOne({ _id: req.params.id }).then(websites => {
+    websites.comments.push({
+      comment: req.body.comment,
+      name: req.body.name
+    })
+    websites.save()
+    res.json(websites) //i think this is right??
+  }}
+  
 //put // does not work
 // app.put('/api/websites/:id', (req, res) => {
 //   Websites.findOneAndUpdate({ _id: req.params.id }, req.body, {

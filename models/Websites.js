@@ -4,13 +4,17 @@ const mongoose = require('../db/connection')
 // Create a new schema
 
 const CommentSchema = new mongoose.Schema({
-  title: {
+  comment: {
     type: String,
     required: true
   },
-  username: {
+  name: {
     type: String,
     required: true
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now()
   }
 })
 
@@ -32,7 +36,11 @@ const WebsiteSchema = new mongoose.Schema({
     // upvotes vs downvotes
     type: Number
   },
-  comments: [CommentSchema]
+  comments: [CommentSchema],
+  createdAt: {
+    type: Date,
+    default: Date.now()
+  }
 })
 
 // Giving mongoose the schema to build the model
