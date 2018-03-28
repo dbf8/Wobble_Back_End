@@ -35,16 +35,16 @@ app.post('/api/websites', (req, res) => {
       console.log(err)
     })
 })
-//get
-app.get('/api/websites/:id', (req, res) => {
-  Websites.findById(req.params.id)
-    .then(websites => {
-      res.json(websites)
-    })
-    .catch(err => {
-      console.log(err)
-    })
-})
+// //get
+// app.get('/api/websites/:id', (req, res) => {
+//   Websites.findById(req.params.id)
+//     .then(websites => {
+//       res.json(websites)
+//     })
+//     .catch(err => {
+//       console.log(err)
+//     })
+// })
 //delete!
 app.delete('/api/websites/:id', (req, res) => {
   Websites.findOneAndRemove({ _id: req.params.id }).then(websites => {
@@ -53,18 +53,24 @@ app.delete('/api/websites/:id', (req, res) => {
     })
   })
 })
-
+//need help below
 //comment posting ( think I'm doing this right...) (not sure if calling the :id is the right move? NHI?)
-app.post('/api/websites/:id', (req, res) => {
+app.put('/api/websites/:id', (req, res) => {
   Websites.findOne({ _id: req.params.id }).then(websites => {
     websites.comments.push({
       comment: req.body.comment,
-      name: req.body.name
+      name: req.body.name,
+      date: date.now()
     })
-    websites.save()
-    res.json(websites) //i think this is right??
-  }}
-  
+    websites
+      .save()
+      // do I need this?
+      .then(websites => {
+        res.json(websites)
+      })
+  })
+})
+
 //put // does not work
 // app.put('/api/websites/:id', (req, res) => {
 //   Websites.findOneAndUpdate({ _id: req.params.id }, req.body, {
