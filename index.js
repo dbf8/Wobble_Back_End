@@ -35,16 +35,16 @@ app.post('/api/websites', (req, res) => {
       console.log(err)
     })
 })
-// //get
-// app.get('/api/websites/:id', (req, res) => {
-//   Websites.findById(req.params.id)
-//     .then(websites => {
-//       res.json(websites)
-//     })
-//     .catch(err => {
-//       console.log(err)
-//     })
-// })
+//get
+app.get('/api/websites/:id', (req, res) => {
+  Websites.findById(req.params.id)
+    .then(websites => {
+      res.json(websites)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+})
 //delete!
 app.delete('/api/websites/:id', (req, res) => {
   Websites.findOneAndRemove({ _id: req.params.id }).then(websites => {
@@ -55,32 +55,31 @@ app.delete('/api/websites/:id', (req, res) => {
 })
 //need help below
 //comment posting ( think I'm doing this right...) (not sure if calling the :id is the right move? NHI?)
-app.put('/api/websites/:id', (req, res) => {
-  Websites.findOne({ _id: req.params.id }).then(websites => {
-    websites.comments.push({
-      comment: req.body.comment,
-      name: req.body.name,
-      date: date.now()
-    })
-    websites
-      .save()
-      // do I need this?
-      .then(websites => {
-        res.json(websites)
-      })
-  })
-})
-
-//put // does not work
 // app.put('/api/websites/:id', (req, res) => {
-//   Websites.findOneAndUpdate({ _id: req.params.id }, req.body, {
-//     new: true
-//   }).then(websites => {
-//     Websites.find({}).then(websites => {
-//       res.json(websites)
+//   Websites.findOne({ _id: req.params.id }).then(websites => {
+//     websites.comments.push({
+//       comment: req.body.comment,
+//       name: req.body.name
 //     })
+//     websites
+//       .save()
+//       // do I need this?
+//       .then(websites => {
+//         res.json(websites)
+//       })
 //   })
 // })
+
+//put // WORKS
+app.put('/api/websites/:id', (req, res) => {
+  Websites.findOneAndUpdate({ _id: req.params.id }, req.body, {
+    new: true
+  }).then(websites => {
+    Websites.find({}).then(websites => {
+      res.json(websites)
+    })
+  })
+})
 
 app.set('port', process.env.PORT || 3001)
 
