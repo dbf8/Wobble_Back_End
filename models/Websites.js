@@ -2,6 +2,18 @@
 const mongoose = require('../db/connection')
 
 // Create a new schema
+
+const CommentSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true
+  },
+  username: {
+    type: String,
+    required: true
+  }
+})
+
 const WebsiteSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -19,7 +31,8 @@ const WebsiteSchema = new mongoose.Schema({
   rating: {
     // upvotes vs downvotes
     type: Number
-  }
+  },
+  comments: [CommentSchema]
 })
 
 // Giving mongoose the schema to build the model

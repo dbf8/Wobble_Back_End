@@ -8,7 +8,6 @@ const cors = require('cors')
 
 //model
 const Websites = require('./models/Websites')
-const Comments = require('./models/Websites')
 
 const app = express()
 app.use(methodOverride('_method'))
