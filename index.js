@@ -18,14 +18,14 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors())
 
-//get
+//websites get
 app.get('/api/websites', function(req, res) {
   Websites.find({}).then(websites => {
     console.log(res.json(websites))
     res.json(websites)
   })
 })
-//add!
+//website add!
 app.post('/api/websites', (req, res) => {
   Websites.create(req.body)
     .then(websites => {
@@ -35,7 +35,7 @@ app.post('/api/websites', (req, res) => {
       console.log(err)
     })
 })
-//get
+//individual website get
 app.get('/api/websites/:id', (req, res) => {
   Websites.findById(req.params.id)
     .then(websites => {
@@ -45,7 +45,7 @@ app.get('/api/websites/:id', (req, res) => {
       console.log(err)
     })
 })
-//delete!
+//website delete!
 app.delete('/api/websites/:id', (req, res) => {
   Websites.findOneAndRemove({ _id: req.params.id }).then(websites => {
     Websites.find({}).then(websites => {
@@ -53,8 +53,8 @@ app.delete('/api/websites/:id', (req, res) => {
     })
   })
 })
-//need help below
-//comment posting ( think I'm doing this right...) (not sure if calling the :id is the right move? NHI?)
+
+//comment posting
 app.put('/api/comments/:id', (req, res) => {
   Websites.findOne({ _id: req.params.id }).then(websites => {
     websites.comments.push({
@@ -65,7 +65,7 @@ app.put('/api/comments/:id', (req, res) => {
   })
 })
 
-//put // WORKS
+//website editing
 app.put('/api/websites/:id', (req, res) => {
   Websites.findOneAndUpdate({ _id: req.params.id }, req.body, {
     new: true
