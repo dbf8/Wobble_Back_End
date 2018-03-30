@@ -10,11 +10,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test shakes',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -27,11 +27,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test photos',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -43,11 +43,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test cheat',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -60,11 +60,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test star wars',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -77,11 +77,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test netflix',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -94,11 +94,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test drinks',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -111,11 +111,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test manager',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -127,11 +127,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test 100 words',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -143,11 +143,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test puppies',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -160,11 +160,11 @@ Website.remove({}).then(() => {
         username: '',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test smoothies',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -177,11 +177,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test favefoods',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -193,11 +193,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test O____O',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -210,11 +210,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test gifts and stuff',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -226,11 +226,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test ted talks brah',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
@@ -243,11 +243,11 @@ Website.remove({}).then(() => {
         username: 'admin',
         comments: [
           {
-            comment: 'Test >.>',
+            comment: 'Test pariii',
             name: 'Testy McTester'
           },
           {
-            comment: 'This is awesome. I wish I did this instead of another soccar app',
+            comment: 'This is awesome. I wish I did this instead of another soccer app',
             name: 'Jeff'
           }
         ],
