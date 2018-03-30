@@ -8,6 +8,16 @@ Website.remove({}).then(() => {
         website:
           'http://infographicjournal.com/27-protein-shake-recipes-to-rock-your-routines/',
         username: 'admin',
+        comments: [
+          {
+            comment: 'test',
+            name: 'test'
+          },
+          {
+            comment: 'stupid',
+            name: 'jeff'
+          }
+        ],
         rating: 0
       },
       {
