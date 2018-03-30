@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors())
 
 //websites get
-app.get('/api/websites', function(req, res) {
+app.get('/api/websites', function (req, res) {
   Websites.find({}).then(websites => {
     console.log(res.json(websites))
     res.json(websites)
