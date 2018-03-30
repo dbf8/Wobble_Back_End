@@ -30,9 +30,8 @@ On [Heroku](https://wobble-back-end.herokuapp.com/api/websites)
 
 [Wobble Front End](https://github.com/dbf8/Wobble_Front_End)
 
-<!-- 
+
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc -->
+* Inspiration: Stumbleupon.com
+* Special thanks to Sam and Jeff for last minute troubleshooting.
